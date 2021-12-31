@@ -1,0 +1,63 @@
+DIV {
+
+    width: 1500px;
+    height: 1000px;
+    position: absolute; 
+
+}
+
+.quadro1{ 
+    top: 0px;
+    left:0px;
+    width: 950px;
+    height: 80px;
+    color: wheat;
+    /* background-color: whitesmoke; */
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.quadro3 {
+    top: 102px;
+    width: 520px;
+    height: 180px;
+    color: wheat;
+    
+}
+.quadro2 {
+    top: 102px;
+    left:530px;
+    width: 200px;
+    height: 100px;
+    color: white;
+}
+.quadro4 {
+    top: 270px;
+    width: 500px;
+    height: 100px;
+    color: white;
+}
+
+.quadro5 {
+    top: 400px;
+    width: 600px;
+    height: 800px;
+    color: wheat;
+}
+.quadro6 {
+    top: 580px;
+    width: 580px;
+    color: red;
+}
+.quadro7 {
+    top: 620px;
+    width: 580px;
+    height: 800px;
+    color: wheat;
+    
+}
+/* .quadro8{
+    width: 580px;
+    height: 800px;
+    color: yellowgreen;
+} */
+

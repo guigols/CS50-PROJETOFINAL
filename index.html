@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang='pt-BR'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Calculadora de Grupo Gerador</title>
+        <link href="style.css" rel="stylesheet" type="text/css"> 
+        <script src="JS-GERA.js"></script>         
+    </head> 
+    <body> 
+        <div class="container">
+            <img src="background-device-generator-wallpaper-preview.jpg" height="800px" width="1000px"> 
+            <!-- <div class="section"></div> -->
+                <div class = "quadro1"> 
+                    <h1> <center> Calculadora de dimensionamento de grupo gerador</h1></center> 
+
+                </div>
+        
+            <div class = "quadro2">
+                <h3>Carga Resistiva:</h3>
+                <label for = "cargaR">Somátorio da Carga em kW: </label> <input type="text" id="cargaR" name="carga"><br>
+            </div>    
+            <div class = "quadro3">   
+                <h3> Cargas Indutivas: </h3>
+
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="cv01" placeholder="Potência em CV" type="number" id="cv01">
+                    <input autocomplete="off" autofocus name="rend01" placeholder="Rendimento" type="number" id="rend01">
+                    <input autocomplete="off" autofocus name="partida01" placeholder="Corrente Ip/In" type="number" id="partida01">
+
+                </form>
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="cv02" placeholder="Potência em CV" type="number" id="cv02">
+                    <input autocomplete="off" autofocus name="rend02" placeholder="Rendimento" type="number" id="rend02">
+                    <input autocomplete="off" autofocus name="partida02" placeholder="Corrente Ip/In" type="number" id="partida02">
+                </form>
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="cv03" placeholder="Potência em CV" type="number" id="cv03">
+                    <input autocomplete="off" autofocus name="rend03" placeholder="Rendimento" type="number" id="rend03">
+                    <input autocomplete="off" autofocus name="partida03" placeholder="Corrente Ip/In" type="number" id="partida03">
+                </form>
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="cv04" placeholder="Potência em CV" type="number" id="cv04">
+                    <input autocomplete="off" autofocus name="rend04" placeholder="Rendimento" type="number" id="rend04">
+                    <input autocomplete="off" autofocus name="partida04" placeholder="Corrente Ip/In" type="number" id="partida04">
+                </form>
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="cv05" placeholder="Potência em CV" type="number" id="cv05">
+                    <input autocomplete="off" autofocus name="rend05" placeholder="Rendimento" type="number" id="rend05">
+                    <input autocomplete="off" autofocus name="partida05" placeholder="Corrente Ip/In" type="number" id="partida05">
+                </form>
+            </div>
+
+            <div class="quadro4">
+                <button type="button" onClick ="calculaCargaGmg()">Calcular Motor Diesel </button>
+                
+                <p>Para método de partida o Ip/In usualmente é considerado: </p>
+                <ul>
+                    <li>Partida Direta: 7 </li>
+                    <li>Soft-Starter: 3 </li>
+                    <li>Inversor de Frequência: 2,5 </li>
+                
+            </div>
+
+                </ul>
+                
+    
+    <div class="quadro5">
+    <!-- <p>__________________________________________________________________________</p> -->
+    <h2>Motor Diesel:</h2>
+    <p id="resultadoMotor"></p>
+
+    <!-- <p>__________________________________________________________________________</p> -->
+    <h2>Alternador: </h2>
+    <p id="resultadoAlternador"></p>
+
+    <!-- <p>__________________________________________________________________________</p> -->
+    
+            <!-- <h4>Equações:: </h4>
+
+            <ul>
+                <li> Alternador: Xd"  = ... </li>
+
+
+                <li> Motor Diesel ΔV:   = ... </li> -->
+
+    </div>
+
+    <div class="quadro6">
+        <p id="cotacao"></p>
+    </div>
+
+    <!-- <div class="quadro7">
+
+        <h3> Formulário: </h3>
+                <form action="/" method ="post">
+                    <input autocomplete="off" autofocus name="name" placeholder="Nome" type="text" id="name">
+                    <input autocomplete="off" autofocus name="phone" placeholder="Telefone" type="text" id="phone">
+                    <input autocomplete="off" autofocus name="email" placeholder="E-mail" type="text" id="email">
+                    <input autocomplete="off" autofocus name="city" placeholder="Cidade" type="text" id="city">
+                    <input autocomplete="off" autofocus name="state" placeholder="Estado" type="text" id="state">
+                    <input autocomplete="off" autofocus name="country" placeholder="País" type="text" id="country">
+                    
+                    <button type="button" onClick ="cotacao()">Enviar Formulário </button>
+                </div> -->
+    </body>
+</html>
